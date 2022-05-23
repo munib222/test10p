@@ -1,0 +1,15 @@
+{
+  "CreateEmail": "munib.hexor@gmail.co", 
+  "FirstName": "Munib",
+  "LastName": "Ahmad",
+  "Password": "12345678",
+  "Company": "Tkxel",
+  "Address": "abc lahore",
+  "City": "Lahore",
+  "Zip": "54000",
+  "Phone": "03331234567",
+  "Email": "hamza.manzoor@tkxel.com",
+ 
+  "InvalidEmail": "hamzacom",
+  "InvalidPassword": "123"
+}
