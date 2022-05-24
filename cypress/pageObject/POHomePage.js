@@ -1,7 +1,7 @@
 /// <reference types="cypress" />
 
 
-class LoginPage
+class HomePage
 {
     
 Visit(){
@@ -11,40 +11,6 @@ Visit(){
    
 }
 
-FillCreateEmail(value){
-  const signin =  cy.get ('.login').click()
-    const Field = cy.get('#email_create').should('be.visible')
-    Field.clear()
-    Field.type(value)
-    return this
-}
-
-SubmitAcc(){
-
-    const Button = cy.get('#SubmitCreate > span').should('be.visible')
-    Button.click()
-}
-
-    FillTitle(){
-      const title = cy.get('#id_gender1')
-      title.clear().click() 
-    }
-
-    FillFirstName(value){
-      const firstname = cy.get('#customer_firstname').should('be.visible')
-      firstname.clear()
-      firstname.type(value)
-    }
-    FillLastName(value){
-      const lastname = cy.get('#customer_lastname').should('be.visible')
-      firstname.clear()
-      firstname.type(value)
-    }
-    FillPassword(value){
-      const lastname = cy.get('#passwd').should('be.visible')
-      firstname.clear()
-      firstname.type(value)
-    }
     //cy.get('.toast-success > .toast-message', {timeout: 600000}).should('be.visible')
 }
 
@@ -73,4 +39,4 @@ SubmitAcc(){
 
  
 
- export default LoginPage
+ export default HomePage

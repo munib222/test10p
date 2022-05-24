@@ -6,7 +6,21 @@
   "Company": "Tkxel",
   "Address": "abc lahore",
   "City": "Lahore",
+  "State":"Arizona",
+  "StValue":"3",
   "Zip": "54000",
+  "Alias":"abcxyz",
+
+  "Date":"22",
+  "Month":"February",
+  "Year":"1993",
+
+
+
+
+
+
+
   "Phone": "03331234567",
   "Email": "hamza.manzoor@tkxel.com",
  

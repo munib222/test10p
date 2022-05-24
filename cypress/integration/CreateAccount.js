@@ -1,22 +1,41 @@
-const createAccount = require('../pageObject/POcreateAccount')
-
+const HomePage = require('../pageObject/POHomePage')
+const SigninPg = require('../pageObject/POsignin')
 /// <reference types="cypress" />
 
 // let homePageData = new homeKayakPage()
 // let flightPageData = new flightKayakPage()
 let accData = require('../fixtures/data.json')
-    const acc = new createAccount()
+    const home = new HomePage()
+    const signin = new SigninPg()
 describe('First Test suite', () => {
 
     it('URL visit and verify title', function()
     {
-       acc.Visit()
+       home.Visit()
     })
        
     it('1.Create account into the site', () => {
-        
-      acc.FillCreateEmail(accData.CreateEmail)
-      acc.SubmitAcc()
+      signin.VisitSignin()  
+      signin.FillCreateEmail(accData.CreateEmail)
+      signin.SubmitAcc()
+      signin.FillTitle()
+      signin.FillCFirstName(accData.FirstName)
+      signin.FillCLastName(accData.LastName)
+      signin.FillPassword(accData.Password)
+      signin.FillDate(accData.Date)
+      signin.FillMonth(accData.Month)
+      signin.FillYear(accData.Year)
+      signin.FillFirstName(accData.FirstName)
+      signin.FillLastName(accData.LastName)
+      signin.FillCompany(accData.Company)
+      signin.FillAddress(accData.Address)
+      signin.FillCity(accData.City)
+      signin.FillState()
+      signin.FillZip(accData.Zip)
+      signin.FillPhone(accData.Phone)
+      signin.FillAlias(accData.Alias)
+      signin.RegisterAccount()
+
 
  //       homePageData.clickFlight()
         
