@@ -19,13 +19,12 @@ FillCreateEmail(value){
 SubmitAcc(){
 
     cy.get('#SubmitCreate > span').click({force:true})
-   
+    cy.wait(6000)
 }
 
     
     RegisterAccount(){
-      cy.wait(5000)
-       cy.get('#submitAccount > span').click({force:true})
+          cy.get('#submitAccount > span').click({force:true})
     }
     validationMessages(){
 

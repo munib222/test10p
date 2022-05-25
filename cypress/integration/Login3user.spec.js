@@ -8,12 +8,12 @@ const home = new HomePage()
 const signin = new SigninPg()
 const FailedLogin = new POFailedLogin()
 const Login = new POLogin()
-describe('Login by 3 consective users', () => {
+describe('Login by 3 different users', () => {
 
     it('URL visit and verify login by 3 users', function () {
         home.Visit()
     })
-    it.only('Login', () => {
+    it('Login', () => {
       cy.get(accData).each((param) => {
 
             home.Visit()

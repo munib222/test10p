@@ -8,7 +8,7 @@ class CrAccount
 
     cy.get ('.login').click()
   }
-
+  
 FillCreateEmail(value){
 
     const Field = cy.get('#email_create').should('be.visible')
@@ -21,6 +21,7 @@ SubmitAcc(){
 
     const Button = cy.get('#SubmitCreate > span').should('be.visible')
     Button.click()
+    cy.wait(6000)
 }
 
     FillTitle(){
@@ -30,6 +31,7 @@ SubmitAcc(){
     }
 
     FillCFirstName(value){
+      
       const Cfirstname = cy.get('#customer_firstname').should('be.visible')
       Cfirstname.clear()
       Cfirstname.type(value)
