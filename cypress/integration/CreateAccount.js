@@ -1,13 +1,11 @@
-const HomePage = require('../pageObject/POHomePage')
-const SigninPg = require('../pageObject/POsignin')
+const HomePage = require('../support/pageObject/POHomePage')
+const SigninPg = require('../support/pageObject/POsignin')
 /// <reference types="cypress" />
 
-// let homePageData = new homeKayakPage()
-// let flightPageData = new flightKayakPage()
 let accData = require('../fixtures/data.json')
     const home = new HomePage()
     const signin = new SigninPg()
-describe('First Test suite', () => {
+describe('Signup and create account', () => {
 
     it('URL visit and verify title', function()
     {
@@ -18,7 +16,6 @@ describe('First Test suite', () => {
       signin.VisitSignin()  
       signin.FillCreateEmail(accData.CreateEmail)
       signin.SubmitAcc()
-      signin.FillTitle()
       signin.FillCFirstName(accData.FirstName)
       signin.FillCLastName(accData.LastName)
       signin.FillPassword(accData.Password)
@@ -36,39 +33,5 @@ describe('First Test suite', () => {
       signin.FillAlias(accData.Alias)
       signin.RegisterAccount()
 
-
- //       homePageData.clickFlight()
-        
-        // flightPageData.flightPageTitle().should("eq", 'Book the right flight with our no change fees filter.')
-        // flightPageData.removeAllDesination()
-        
-
-        // flightPageData.clickOrigin()
-        // flightPageData.typeOrigin("Karachi, Pakistan")
-        // flightPageData.dropdownCountrySelection("Karachi")
-
-        // flightPageData.bodyClick()
-
-        // flightPageData.clickDestination()
-        // flightPageData.typeDesination("Mumbai, India")
-        // flightPageData.dropdownCountrySelection("Mumbai")
-
-        // flightPageData.bodyClick()
-
-        // flightPageData.selectButton(1)
-        // flightPageData.passengersData(0,4)
-        // flightPageData.passengersData(1,1)
-        // flightPageData.passengersData(2,2)
-        // flightPageData.passengersData(3,2)
-        // flightPageData.passengersData(4,2)
-
-        // flightPageData.bodyClick()
-
-        // flightPageData.clickSubmit()
-
     })
-    
-    // it('Click', () => {
-    //     homePageData.clickFlight()
-    // })
 })

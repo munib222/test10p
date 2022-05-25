@@ -1,5 +1,5 @@
 {
-  "CreateEmail": "munib.hexor@gmail.co", 
+  "CreateEmail": "munib.hexor6@gmail.com", 
   "FirstName": "Munib",
   "LastName": "Ahmad",
   "Password": "12345678",
@@ -14,16 +14,5 @@
   "Date":"22",
   "Month":"February",
   "Year":"1993",
-
-
-
-
-
-
-
-  "Phone": "03331234567",
-  "Email": "hamza.manzoor@tkxel.com",
- 
-  "InvalidEmail": "hamzacom",
-  "InvalidPassword": "123"
+  "Phone": "03331234567"
 }
